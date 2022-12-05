@@ -13,6 +13,7 @@ from apps.women.models import Women
 
 from apps.slide.models import Slide
 
+from apps.testimonials.models import Testimonials
 
 # Create your views here.
 
@@ -20,6 +21,7 @@ def index(request):
     setting = Settings.objects.latest('id')
     slide = Slide.objects.latest('id')
     men = Men.objects.all()
+    testimonials = Testimonials.objects.all()
 
     women = Women.objects.all()
     banner = Banner.objects.latest('id')
@@ -41,6 +43,7 @@ def index(request):
         'setting':setting,
         'slide':slide,
         'men':men,
+        'testimonials':testimonials,
 
         'women':women,
         'banner':banner,

@@ -348,26 +348,15 @@
 				</div>
 				<div class="testimonials-slider text-center col-md-12">
 					<div class="swiper-wrapper">
+						{%for testimonials in testimonials%}
 						<div class="swiper-slide">
-							<div class="testimonials-container shadow"> <img alt="user avatar" src="{% static 'assets-for-index-2/img/user.png' %}">
-								<h3> Martin Johe, Co-Founder / CEO <span>Fastcompany ltd.</span> </h3>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							<div class="testimonials-container shadow"> <img alt="user avatar" src="{{testimonials.image.url}}">
+								<h3> {{testimonials.name}}</span> </h3>
+								<p> {{testimonials.descriptions}}</p>
 							</div>
 						</div>
 
-						<div class="swiper-slide">
-							<div class="testimonials-container shadow"> <img alt="user avatar" src="{% static 'assets-for-index-2/img/user2.png' %}">
-								<h3> Martin Johe, Co-Founder / CEO <span>Fastcompany ltd.</span> </h3>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							</div>
-						</div>
-
-						<div class="swiper-slide">
-							<div class="testimonials-container shadow"> <img alt="user avatar" src="{% static 'assets-for-index-2/img/user.png' %}">
-								<h3> Martin Johe, Co-Founder / CEO <span>Fastcompany ltd.</span> </h3>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							</div>
-						</div>
+						{%endfor%}
 					</div>
 					<div class="testimonials-pagination"></div>
 					<div class="testimonials-slider-next right-arrow-negative"> <span class="ti-arrow-right"></span> </div>
