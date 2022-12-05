@@ -40,9 +40,9 @@ INSTALLED_APPS = [
     'apps.settings',
     'apps.banner',
     'apps.contact',
-    'apps.men',
     'apps.women',
     'apps.slide',
+    'apps.men'
 
 
 ]
