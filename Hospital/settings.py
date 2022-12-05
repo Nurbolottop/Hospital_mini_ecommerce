@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'apps.contact',
     'apps.women',
     'apps.slide',
-    'apps.men'
+    'apps.men',
+    'apps.testimonials',
+
 
 
 ]
