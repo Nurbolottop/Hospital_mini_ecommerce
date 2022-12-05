@@ -476,24 +476,19 @@
 			</div>
 			<div class="col-md-3">
 				<div class="contact-data">
-					<h4>United States</h4>
+					<h4>Our Contacts</h4>
 					<ul>
-						<li><span class="ti-mobile icon"></span>+ 123 456 7890</li>
-						<li><span class="ti-email icon"></span>admin@goshop</li>
-						<li><span class="ti-map-alt icon"></span>201 Oak Street Building 27 <br> Manchester, USA</li>
+						<li><span class="ti-mobile icon"></span>{{contacts.phone}}</li>
+						<li><span class="ti-email icon"></span>{{contacts.email}}</li>
+						<li><span class="ti-map-alt icon"></span>{{contacts.address}}</li>
 					</ul>
 				</div>
-				<div class="contact-data">
-					<h4>Australia</h4>
-					<ul>
-						<li><span class="ti-mobile icon"></span>+ 123 456 7890</li>
-						<li><span class="ti-map-alt icon"></span>201 Oak Street Building 27 <br> Manchester, USA</li>
-					</ul>
-				</div>
+				
 			</div>
 			<div class="col-md-8 col-md-push-1">
 				<div class="contact-form">
-					<form  class="contact-forms" id="contact-form" action="mail.php" method="post">
+					<form  class="contact-forms"   method="POST">
+						{%csrf_token%}
 						<div class="form-group">
 							<input class="form-control" type="text" name="name" placeholder="Name">
 						</div>
@@ -530,54 +525,23 @@
 
 				   <div class="col-md-4 col-sm-12">
 					   <div class="f_logo">
-						<a href="#"><img src="{% static 'assets-for-index-2/img/logo.png' %}" alt="" /></a>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit best shop for you voluptatem.Sed ut perspiciatis unde omnis iste natus errorsit.</p>
+						<a href="#"><img src="{{setting.logo_site.url}}" style="max-width:100px;" alt="" /></a>
+						<p>{{setting.name_site}} - {{setting.description_site}}</p>
 					   </div>
 				   </div>
 
 				   <div class="col-md-4 col-sm-12 info_menu">
 						<h4>INFORMATIONS</h4>
 						<ul>
-							<li><a href="#">  Delivery information </a></li>
-							<li><a href="#">   Privacy Policy </a></li>
-							<li><a href="#">   Terms & Conditions </a></li>
-							<li><a href="#">   Return & Exchange </a></li>
+							<li><a href="#men">  Men products </a></li>
+							<li><a href="#women">   Women Product </a></li>
+							<li><a href="#testimonials">   Testimonials</a></li>
+							<li><a href="#contact">   Contacts </a></li>
 						</ul>
-						<ul>
-							<li><a href="#">  Free Shipping </a></li>
-							<li><a href="#">   Order Status </a></li>
-							<li><a href="#">   Gift Cards</a></li>
-							<li><a href="#">   International</a></li>
-						</ul>
+						
 				   </div>
 
-				   <div class="col-md-4  col-sm-12">
-					<div class="footer-newsletter">
-						<div class="center">
-							<h4>stay with us</h4>
-							<form action="#" method="post">
-								<div class="input-group">
-									<input class="form-control " type="text" placeholder="e-mail"> 
-									<span class="input-group-btn">
-										<button class="btn btn-default" type="button"><span class="ti-arrow-right"></span></button>
-									</span>
-								</div>
-							</form>
-							<div class="social">
-								<ul>
-									<li class="fndus">Find us here:</li>
-									<li><a href="http://facebook.com/" target="_blank"><span class="ti-facebook"></span></a></li>
-									<li><a href="https://twitter.com/" target="_blank"><span class="ti-twitter-alt"></span></a></li>
-									<li><a href="http://linkedin.com/" target="_blank"><span class="ti-linkedin"></span></a></li>
-									<li><a href="https://vimeo.com/" target="_blank"><span class="ti-vimeo-alt"></span></a></li>
-									<li><a href="http://youtube.com/" target="_blank"><span class="ti-youtube"></span></a></li>
-								</ul>
-							</div>
-							
-						</div>
-					</div>
-
-				   </div>
+				   
 
 				   <div class="clearfix col-md-12 col-sm-12">
 						<hr>
@@ -585,7 +549,7 @@
 
 				   <div class="col-md-12 col-sm-12">
 						<div class="footer-copyright">
-							 <p>© 2022 Bestshop - All Rights Reserved.</p>
+							<p><li><a href="https://github.com/Nurbolottop">© 2022 Codex Studio - All Rights Reserved.</a></li></p>
 						</div>
 				   </div>
 				   

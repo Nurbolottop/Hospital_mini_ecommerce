@@ -123,3 +123,15 @@ class Contacts(models.Model):
     class Meta:
         verbose_name = "Контакты"
         verbose_name_plural = "Контакты"
+
+class Contact_detail(models.Model):
+    name = models.CharField(max_length=244,verbose_name="Имя")
+    email = models.EmailField(verbose_name='Почта')
+    message = models.TextField(verbose_name='Сообщение')
+
+    def __str__(self):
+        return self.name_user
+
+    class Meta:
+        verbose_name = "Обратная связь"
+        verbose_name_plural = "Обратная связь"
