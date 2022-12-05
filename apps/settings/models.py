@@ -116,3 +116,10 @@ class Contacts(models.Model):
     instagram = models.URLField(verbose_name="Instagram", blank=True ,null= True)
     telegram = models.URLField(verbose_name="Telegram", blank=True ,null= True)
     whatsapp = models.URLField(verbose_name="Whatsapp", blank=True ,null= True)
+
+    def __str__(self):
+        return self.phone
+
+    class Meta:
+        verbose_name = "Контакты"
+        verbose_name_plural = "Контакты"
