@@ -68,8 +68,8 @@ Version: 1.0.0
 	font-size: 30px;
 }
 .swiper-slide h1 {
-	color: #121212;
-	font-size: 91px;
+	color: #6cb9b6;
+	font-size: 50px;
 	text-transform: capitalize;
 }
 .home h2::after {
@@ -105,7 +105,7 @@ Version: 1.0.0
   color: #f63440;
 }
 .home-slider-title-main {
-  color: #333;
+  color: rgb(36, 97, 133);
   font-weight: 500;
   max-width: 754px;
   text-transform: capitalize;

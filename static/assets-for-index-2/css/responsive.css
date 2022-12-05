@@ -83,7 +83,7 @@
 }
 
 /* Tablet desktop :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1068px) and (max-width: 991px) {
 .home.image-slider .swiper-slide {
   padding: 19vh 12vh 0;
 }
