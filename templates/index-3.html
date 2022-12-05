@@ -177,12 +177,12 @@
 							<li class="swiper-slidess text-center"> 
 								<span class="product-list-left pull-left">
 							    	<span class="sale-p">sale</span>
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="{{men.product_image_1.url}}"> 
+									<a href="#" data-target="#mens" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="{{men.product_image_1.url}}"> 
 									<img alt="product image" class="product-list-secondary-img" src="{{men.product_image_2.url}}">
 									</a>
 								</span> 
 
-								<a href="#" data-target="#product-01" data-toggle="modal">
+								<a href="#" data-target="#mens" data-toggle="modal">
 									<span class="product-list-right pull-left">
 										<span class="product-list-name h4 black-color">{{men.name}}</span>
 										<span class="product-list-price">${{men.price}}</span>
@@ -197,14 +197,14 @@
 								</a> 
 
 							</li>
-							<div class="modal fade product-modal" id="product-01" role="dialog" tabindex="-1">
+							<div class="modal fade product-modal" id="mens" role="dialog" tabindex="-1">
 								<div class="modal-dialog">
 									<!-- Modal content-->
 									<div class="modal-content shadow">
 										<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
 										<div class="modal-body">
 											<!-- Wrapper for slides -->
-											<div class="carousel slide product-slide" id="product-carousel">
+											<div class="carousel slide product-slide" id="product-men">
 												<div class="carousel-inner cont-slider">
 													<div class="item active"> <img alt="" src="{{men.product_image_1.url}}" title=""> </div>
 													<div class="item"> <img alt="" src="{{men.product_image_2.url}}" title=""> </div>
@@ -213,10 +213,10 @@
 												</div>
 												<!-- Indicators -->
 												<ol class="carousel-indicators">
-													<li class="active" data-slide-to="0" data-target="#product-carousel"> <img alt="" src="{{men.product_image_1.url}}"> </li>
-													<li class="" data-slide-to="1" data-target="#product-carousel"> <img alt="" src="{{men.product_image_2.url}}"> </li>
-													<li class="" data-slide-to="2" data-target="#product-carousel"> <img alt="" src="{{men.product_image_3.url}}"> </li>
-													<li class="" data-slide-to="3" data-target="#product-carousel"> <img alt="" src="{{men.product_image_4.url}}"> </li>
+													<li class="active" data-slide-to="0" data-target="#product-men"> <img alt="" src="{{men.product_image_1.url}}"> </li>
+													<li class="" data-slide-to="1" data-target="#product-men"> <img alt="" src="{{men.product_image_2.url}}"> </li>
+													<li class="" data-slide-to="2" data-target="#product-men"> <img alt="" src="{{men.product_image_3.url}}"> </li>
+													<li class="" data-slide-to="3" data-target="#product-men"> <img alt="" src="{{men.product_image_4.url}}"> </li>
 												</ol>
 											</div>
 											<!-- Wrapper for slides -->
@@ -251,7 +251,7 @@
 
 				<div class="single-category-box2 ">
 					
-					<a class="link-btn" href="#"><img src="{% static 'assets-for-index-2/img/lg3.jpg' %}" alt="image"></a>
+					<a class="link-btn" ><img src="{% static 'assets-for-index-2/img/lg3.jpg' %}" alt="image"></a>
 				</div>
 
 
@@ -274,19 +274,19 @@
 				<div class="col-md-12">
 					<div class="product-list-sliderd">
 						<ul class="swiper-wrappers product-list product-list-vertical">
-							{%for men in men%}
+							{%for women in women%}
 							<li class="swiper-slidess text-center"> 
 								<span class="product-list-left pull-left">
 							    	<span class="sale-p">sale</span>
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="{{men.product_image_1.url}}"> 
-									<img alt="product image" class="product-list-secondary-img" src="{{men.product_image_2.url}}">
+									<a href="#" data-target="#womens" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="{{women.product_image_1.url}}"> 
+									<img alt="product image" class="product-list-secondary-img" src="{{women.product_image_2.url}}">
 									</a>
 								</span> 
 
-								<a href="#" data-target="#product-01" data-toggle="modal">
+								<a href="#" data-target="#womens" data-toggle="modal">
 									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">{{men.name}}</span>
-										<span class="product-list-price">${{men.price}}</span>
+										<span class="product-list-name h4 black-color">{{women.name}}</span>
+										<span class="product-list-price">${{women.price}}</span>
 										<span class="rating-area">
 											<span class="ti-star "></span>
 											<span class="ti-star "></span>
@@ -298,26 +298,26 @@
 								</a> 
 
 							</li>
-							<div class="modal fade product-modal" id="product-01" role="dialog" tabindex="-1">
+							<div class="modal fade product-modal" id="womens" role="dialog" tabindex="-1">
 								<div class="modal-dialog">
 									<!-- Modal content-->
 									<div class="modal-content shadow">
 										<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
 										<div class="modal-body">
 											<!-- Wrapper for slides -->
-											<div class="carousel slide product-slide" id="product-carousel">
+											<div class="carousel slide product-slide" id="product-women">
 												<div class="carousel-inner cont-slider">
-													<div class="item active"> <img alt="" src="{{men.product_image_1.url}}" title=""> </div>
-													<div class="item"> <img alt="" src="{{men.product_image_2.url}}" title=""> </div>
-													<div class="item"> <img alt="" src="{{men.product_image_3.url}}" title=""> </div>
-													<div class="item"> <img alt="" src="{{men.product_image_4.url}}" title=""> </div>
+													<div class="item active"> <img alt="" src="{{women.product_image_1.url}}" title=""> </div>
+													<div class="item"> <img alt="" src="{{women.product_image_2.url}}" title=""> </div>
+													<div class="item"> <img alt="" src="{{women.product_image_3.url}}" title=""> </div>
+													<div class="item"> <img alt="" src="{{women.product_image_4.url}}" title=""> </div>
 												</div>
 												<!-- Indicators -->
 												<ol class="carousel-indicators">
-													<li class="active" data-slide-to="0" data-target="#product-carousel"> <img alt="" src="{{men.product_image_1.url}}"> </li>
-													<li class="" data-slide-to="1" data-target="#product-carousel"> <img alt="" src="{{men.product_image_2.url}}"> </li>
-													<li class="" data-slide-to="2" data-target="#product-carousel"> <img alt="" src="{{men.product_image_3.url}}"> </li>
-													<li class="" data-slide-to="3" data-target="#product-carousel"> <img alt="" src="{{men.product_image_4.url}}"> </li>
+													<li class="active" data-slide-to="0" data-target="#product-women"> <img alt="" src="{{women.product_image_1.url}}"> </li>
+													<li class="" data-slide-to="1" data-target="#product-women"> <img alt="" src="{{women.product_image_2.url}}"> </li>
+													<li class="" data-slide-to="2" data-target="#product-women"> <img alt="" src="{{women.product_image_3.url}}"> </li>
+													<li class="" data-slide-to="3" data-target="#product-women"> <img alt="" src="{{women.product_image_4.url}}"> </li>
 												</ol>
 											</div>
 											<!-- Wrapper for slides -->
@@ -326,17 +326,17 @@
 													<div class="col-md-8 col-md-push-2">
 														<div class="row">
 															<div class="col-md-7">
-																<h3 class="pull-left nk section-heading">{{men.name}}</h3>
+																<h3 class="pull-left nk section-heading">{{women.name}}</h3>
 															</div>
 															<div class="col-md-5">
 																<span class="product-right-section">
-																	<span>${{men.price}}</span>
+																	<span>${{women.price}}</span>
 																</span>
 															</div>
 														</div>
 													</div>
 													<div class="col-md-8 col-md-push-2 product-description">
-														<h4 class="section-heading">{{men.desc}}</h4>
+														<h4 class="section-heading">{{women.desc}}</h4>
 													</div>
 												</div>
 											</div>
@@ -436,7 +436,7 @@
 	
 	
 	<!-- counter section -->	
-	<div class="blog_area">
+	{% comment %} <div class="blog_area">
 		<div class="blog-counter" id="blog">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -485,7 +485,7 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>	 {% endcomment %}
 	<!--/ counter section end-->
 	
 
