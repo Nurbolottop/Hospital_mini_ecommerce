@@ -10,7 +10,7 @@
 	<!-- header -->
 	{% include 'header.html'%}
 	<!--/ End header -->
-	
+	x
 	<!-- slider -->
 	<section class="home section image-slider" id="home">
 		<div class="home-slider text-center">
@@ -102,57 +102,35 @@
 					<div class="banner-box banner-type-5 banner-hover-3 nnrrnew">
 						<div class="banner-inner">
 							<div class="banner-image">
-								<img src="{% static 'assets-for-index-2/img/h3ad1.jpg' %}" alt="Banner">
+								<img src="{{banner.image_1.url}}"style="max-width:400px;" alt="Banner">
 							</div>
-							<div class="banner-info">
-								<div class="banner-info--inner one_inr">
-									
-									<p class="heading-bigger text-capitalize">Gloves</p>
-									<p class="banner-title-1 text-uppercase font-weight-bold">50% off Medical Gloves</p>
-								</div>
-							</div>
-							<a class="banner-link banner-overlay" href="#">Shop Now</a>
+							
 						</div>
 					</div>
 				</div>
-				<div class="col-md-8 col-sm-12 ">
-					<div class="banner-box banner-type-5 banner-hover-3 mm_b_30">
+
+				<div class="col-md-4 col-sm-12 ">
+					<div class="banner-box banner-type-5 banner-hover-3 nnrrnew">
 						<div class="banner-inner">
 							<div class="banner-image">
-								<img src="{% static 'assets-for-index-2/img/h3ad2.jpg' %}" alt="Banner">
+								<img src="{{banner.image_2.url}}"style="max-width:400px;" alt="Banner">
 							</div>
-							<div class="banner-info">
-								<div class="banner-info--inner two_inr">
-									<p class="banner-title-1 font-weight-bold text-uppercase">Disposable Face Mask</p>
-									<p class="banner-title-4">
-										<span>Off 70%</span>
-									</p>
-									<p class="banner-title-5">Don't Miss </p>
-								</div>
-							</div>
-							<a class="banner-link banner-overlay" href="#">Shop Now</a>
+							
 						</div>
 					</div>
-
-					<div class="banner-box banner-type-5 banner-hover-3 mm_b_30">
-						<div class="banner-inner">
-							<div class="banner-image">
-								<img src="{% static 'assets-for-index-2/img/h3ad3.jpg' %}" alt="Banner">
-							</div>
-							<div class="banner-info">
-								<div class="banner-info--inner three_inr">
-									<p class="banner-title-1 font-weight-bold text-uppercase">Hand Shop</p>
-									<p class="banner-title-4">
-										<span>Off 50%</span>
-									</p>
-									<p class="banner-title-5">Don't Miss This</p>
-								</div>
-							</div>
-							<a class="banner-link banner-overlay" href="#">Shop Now</a>
-						</div>
-					</div>
-
 				</div>
+
+				<div class="col-md-4 col-sm-12 ">
+					<div class="banner-box banner-type-5 banner-hover-3 nnrrnew">
+						<div class="banner-inner">
+							<div class="banner-image">
+								<img src="{{banner.image_3.url}}"style="max-width:400px;" alt="Banner">
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
 
 
 
@@ -176,7 +154,6 @@
 							{%for men in men%}
 							<li class="swiper-slidess text-center"> 
 								<span class="product-list-left pull-left">
-							    	<span class="sale-p">sale</span>
 									<a href="#" data-target="#mens" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="{{men.product_image_1.url}}"> 
 									<img alt="product image" class="product-list-secondary-img" src="{{men.product_image_2.url}}">
 									</a>
@@ -251,7 +228,7 @@
 
 				<div class="single-category-box2 ">
 					
-					<a class="link-btn" ><img src="{% static 'assets-for-index-2/img/lg3.jpg' %}" alt="image"></a>
+					<a class="link-btn" ><img src="{{banner.image_4.url}}" style="max-width:400px;" alt="image"></a>
 				</div>
 
 

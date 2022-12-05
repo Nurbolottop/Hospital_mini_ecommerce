@@ -106,3 +106,13 @@ class Banner(models.Model):
     class Meta:
         verbose_name = "Баннер"
         verbose_name_plural = "Баннер"
+
+
+class Contacts(models.Model):
+    phone = models.CharField(max_length=255,verbose_name='Телефонный номер ')
+    email = models.EmailField(verbose_name='Почта')
+    address = models.CharField(max_length=255,verbose_name='Адрес')
+    facebook = models.URLField(verbose_name="Facebook", blank=True ,null= True)
+    instagram = models.URLField(verbose_name="Instagram", blank=True ,null= True)
+    telegram = models.URLField(verbose_name="Telegram", blank=True ,null= True)
+    whatsapp = models.URLField(verbose_name="Whatsapp", blank=True ,null= True)
