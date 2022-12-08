@@ -12,156 +12,43 @@
 	<!--/ End header -->
 	x
 	<!-- slider -->
-	<section class="home section image-slider" id="home">
-		<div class="home-slider text-center">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background: url({{slide.slide_image_1.url}});width = "1813px"">
-					<h1>{{slide.name_slide_1}}<span class="hglight"></span></h1>
-					<h2 class="home-slider-title-main">{{slide.desc_slide_1}}</h2>
-					<div class="home-buttons text-center"> <a href="{% url 'our'%}" class="btn btn-lg  btn-primary">our products</a> </div>
-				</div>
-				<div class="swiper-slide" style="background: url({{slide.slide_image_2.url}});">
-					<h1>{{slide.name_slide_2}}</h1>
-					<h2 class="home-slider-title-main">{{slide.desc_slide_2}}</h2>
-					<div class="home-buttons text-center"> <a href="{% url 'our'%}" class="btn btn-lg  btn-primary">our products</a> </div>
-				</div>
-			</div>
-			<div class="home-pagination"></div>
-			<div class="home-slider-next right-arrow-negative"> <span class="ti-arrow-right"></span> </div>
-			<div class="home-slider-prev left-arrow-negative"> <span class="ti-arrow-left"></span> </div>
-		</div>
-	</section>	
+		
 	<!--/ slider -->
 	
 	<!-- cart section -->
-	<span id="items-counter" class=" cart-items-counter" style="display: none">0</span>
+	<span id="items-counter" class="cart-items-counter" style="display: none">0</span>
 	{%include 'cart.html'%}
-	<!--/ cart section end -->
+	
 	
 
 
 	<!-- Banner Area Start Here -->
-	<div class="banner-area h3_banner">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-12 ">
-					<div class="banner-box banner-type-5 banner-hover-3 nnrrnew">
-						<div class="banner-inner">
-							<div class="banner-image">
-								<img src="{{banner.image_1.url}}"style="max-width:400px;" alt="Banner">
-							</div>
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-12 ">
-					<div class="banner-box banner-type-5 banner-hover-3 nnrrnew">
-						<div class="banner-inner">
-							<div class="banner-image">
-								<img src="{{banner.image_2.url}}"style="max-width:400px;" alt="Banner">
-							</div>
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-12 ">
-					<div class="banner-box banner-type-5 banner-hover-3 nnrrnew">
-						<div class="banner-inner">
-							<div class="banner-image">
-								<img src="{{banner.image_3.url}}"style="max-width:400px;" alt="Banner">
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-
-
-
-			</div>
-		</div>
-	</div>
+	
 	<!-- Banner Area End Here -->
 
 	
 	<!-- products area -->	
 	
-	<section class="section-min section product " id="men">
+
+	
+	<section class="section-min section product " >
 		<div class="container overflow-hidden">
 			<div class="row">
 				<div class="col-md-12">
-					<h3 class="section-heading">Men Products</h3>
-				</div>
-				<div class="col-md-12">
-					<div class="product-list-sliderd">
-						<ul class="swiper-wrappers product-list product-list-vertical">
-							{%for men in men%}
-							<li class="swiper-slidess text-center"> 
-								<span class="product-list-left pull-left">
-									<a href="{% url 'men_detail' men.id%}"  data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="{{men.product_image_1.url}}"> 
-									<img alt="product image" class="product-list-secondary-img" src="{{men.product_image_2.url}}">
-									</a>
-								</span> 
-
-								<a href="{% url 'men_detail' men.id%}" data-target="#mens" data-toggle="modal">
-									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">{{men.name}}</span>
-										<span class="product-list-price">${{men.price}}</span>
-										<span class="rating-area">
-											<span class="ti-star "></span>
-											<span class="ti-star "></span>
-											<span class="ti-star "></span>
-											<span class="ti-star"></span>
-											<span class="ti-star"></span>
-										</span>
-									</span>
-								</a> 
-								<button class="btn btn-default add-item" type="button" data-image="{{men.product_image_1.url}}" data-name="{{men.name}}" data-cost="{{men.price}}" data-id="8">
-									add to cart </button>
-							</li>
-							
-							{%endfor%}
-							
-						</ul>
-					</div>				
-				</div>
-
-				<div class="single-category-box2 ">
-					
-					<a class="link-btn" ><img src="{{banner.image_4.url}}" style="max-width:400px;" alt="image"></a>
-				</div>
-
-
-				
-				
-			</div>
-		</div>
-		
-		<!-- PRODUCT MODAL -->
-		
-		<!-- / PRODUCT MODAL -->
-	</section>
-
-	<section class="section-min section product " id="women">
-		<div class="container overflow-hidden">
-			<div class="row">
-				<div class="col-md-12">
-					<h3 class="section-heading">Women Products</h3>
+					<h3 class="section-heading">Our Products</h3>
 				</div>
 				<div class="col-md-12">
 					<div class="product-list-sliderd">
 						<ul class="swiper-wrappers product-list product-list-vertical">
 							{%for women in women%}
-							<li class="swiper-slidess text-center"> 
+							<li class="swiper-slidess text-center" style="max-width:300px;" style="max-height: 150px;"> 
 								<span class="product-list-left pull-left">
-									<a href="{% url 'women_detail' women.id%}" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="{{women.product_image_1.url}}"> 
+									<a href="{% url 'women_detail' women.id%}"  data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="{{women.product_image_1.url}}" style="max-width:300px;" style="max-height: 150px;"> 
 									<img alt="product image" class="product-list-secondary-img" src="{{women.product_image_2.url}}">
 									</a>
 								</span> 
 
-								<a href="{% url 'women_detail' women.id%}" data-target="#womens" data-toggle="modal">
+								<a href="{% url 'women_detail' women.id%}"  data-toggle="modal">
 									<span class="product-list-right pull-left">
 										<span class="product-list-name h4 black-color">{{women.name}}</span>
 										<span class="product-list-price">${{women.price}}</span>
@@ -176,16 +63,48 @@
 								</a> 
 								<button class="btn btn-default add-item" type="button" data-image="{{women.product_image_1.url}}" data-name="{{women.name}}" data-cost="{{women.price}}" data-id="8">
 									add to cart </button>
-								
 							</li>
-
 							{%endfor%}
+
+							
+							
+						</ul>
+						<ul class="swiper-wrappers product-list product-list-vertical">
+							{%for men in men%}
+							<li class="swiper-slidess text-center" style="max-width:300px;" style="max-height: 150px;"> 
+								<span class="product-list-left pull-left">
+									<a href="{% url 'men_detail' men.id%}"  data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="{{men.product_image_1.url}}" style="max-width:300px;" style="max-height: 150px;"> 
+									<img alt="product image" class="product-list-secondary-img" src="{{men.product_image_2.url}}">
+									</a>
+								</span> 
+
+								<a href="{% url 'men_detail' men.id%}"  data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">{{men.name}}</span>
+										<span class="product-list-price">${{men.price}}</span>
+										<span class="rating-area">
+											<span class="ti-star "></span>
+											<span class="ti-star "></span>
+											<span class="ti-star "></span>
+											<span class="ti-star"></span>
+											<span class="ti-star"></span>
+										</span>
+									</span>
+								</a> 
+								<button class="btn btn-default add-item" type="button" data-image="{{men.product_image_1.url}}" data-name="{{men.name}}" data-cost="{{men.price}}"  >
+									add to cart
+								</button>
+							</li>
+							{%endfor%}
+
+							
 							
 						</ul>
 					</div>				
 				</div>
 
-			
+					
+					
 
 
 				
@@ -193,36 +112,16 @@
 			</div>
 		</div>
 		
-
+		<!-- PRODUCT MODAL -->
+		
+		<!-- / PRODUCT MODAL -->
 	</section>
+
+	
 	<!--/ products area end -->	
 	
 	<!-- Testimonials area -->	
-	<section class="testimonials" id="testimonials">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h3 class="section-heading">Testimonials</h3>
-				</div>
-				<div class="testimonials-slider text-center col-md-12">
-					<div class="swiper-wrapper">
-						{%for testimonials in testimonials%}
-						<div class="swiper-slide">
-							<div class="testimonials-container shadow"> <img alt="user avatar" src="{{testimonials.image.url}}">
-								<h3> {{testimonials.name}}</span> </h3>
-								<p> {{testimonials.descriptions}}</p>
-							</div>
-						</div>
-
-						{%endfor%}
-					</div>
-					<div class="testimonials-pagination"></div>
-					<div class="testimonials-slider-next right-arrow-negative"> <span class="ti-arrow-right"></span> </div>
-					<div class="testimonials-slider-prev left-arrow-negative"> <span class="ti-arrow-left"></span> </div>
-				</div>
-			</div>
-		</div>
-	</section>
+	
 	<!--/ Testimonials area end -->		
 
 	

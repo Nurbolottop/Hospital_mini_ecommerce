@@ -49,6 +49,7 @@ def index(request):
         'banner':banner,
         'contacts':contacts,
 
+
     }
 
     return render(request, 'index-3.html', context)

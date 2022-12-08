@@ -19,11 +19,17 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 from apps.settings.views import index
-
+from apps.men.views import men,men_detail
+from apps.women.views import women,women_detail,our 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
+    path('mens/', men, name = "men"),
+    path('mens_product/<int:id>/', men_detail, name='men_detail'),
+    path('womens/', women, name = "women"),
+    path('womens_product/<int:id>/', women_detail, name='women_detail'),
+    path('our/', our, name = "our"),
 
 
 ]

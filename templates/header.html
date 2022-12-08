@@ -8,17 +8,19 @@
                 <span class="icon-bar"></span>
             </button>
             
-            <a class="navbar-brand" href="#"> <img src="{{setting.logo_site.url}}" style="max-width:100px;" alt="" /> </a>
+            <a class="navbar-brand" href="{%url 'index'%}"> <img src="{{setting.logo_site.url}}" style="max-width:100px;" alt="" /> </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#men">Men</a></li>
-                <li><a href="#women">Women</a></li>
+                <li><a href="{%url 'index'%}">Home</a></li>
+                <li><a href="{%url 'men'%}">Men</a></li>
+                <li><a href="{%url 'women'%}">Women</a></li>
                     
                 <li><a href="#testimonials">testimonials</a></li>
                 <li><a href="#contact">contact</a></li>
+
             </ul>
         </div>
     </div>
 </nav>
+
